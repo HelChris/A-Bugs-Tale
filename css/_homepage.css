@@ -1,0 +1,40 @@
+/* GRID */
+#page {
+	display: grid;
+	gap: 1rem;
+	grid-template-areas:
+		"head head head head head head"
+		"nav logo logo logo search search"
+		"main main main main main main"
+		"foot foot foot foot foot foot";
+	grid-template-columns: repeat(6, 1fr);
+}
+
+#page > header {
+	grid-area: head;
+	background-color: #8ca0ff;
+}
+
+#page > nav {
+	grid-area: nav;
+	background-color: #ffa08c;
+}
+
+#page > .logo {
+	grid-area: logo;
+	background-color: #c27464;
+}
+
+#page > .search {
+	grid-area: search;
+	background-color: #864d42;
+}
+#page > main {
+	grid-area: main;
+	background-color: #ffff64;
+}
+
+#page > footer {
+	grid-area: foot;
+	background-color: #8cffa0;
+}
