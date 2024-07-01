@@ -4,3 +4,26 @@
 @import "_contact.css";
 @import "_themeswitcher.css";
 @import "_homepage.css";
+@import "_typograpy.css";
+
+/* :root {
+	/* --main-background-image: url("/images/paper-texture.jpg"); */
+/* --main-background-image: url("/images/jack-b-bOfCH9TnRg4-unsplash.jpg"); */
+/* --image-logo: url("/images/a-bugs-tale-light.png");
+}*/
+
+footer {
+	display: flex;
+}
+
+.form-newsletter-footer,
+.some-content {
+	max-width: 30vw;
+	margin: auto;
+}
+
+.some-links {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}

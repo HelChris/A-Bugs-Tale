@@ -4,24 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A Bugs Tale - stories from the forest" />
+  <meta name="description" content="A Bug's Tale - stories from the forest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" />
-  <title>A Bug's Tale</title>
+  <script src="js/index.js" type="module"></script>
+  <title>A Bug's Tale - Home</title>
+
 </head>
 
 <body>
   <div id="page">
     <header>Desktopmenu</header>
+    <div class="themeswitch">Theme</div>
     <nav>Hamburger</nav>
-    <div class="logo">Logo</div>
+    <div class="logo">
+      <img src="/images/logo-light.png" class="logo">
+      <!-- <img src="/images/a-bugs-tale-logo-dark.png"> -->
+    </div>
     <div class="search">Searchfield</div>
-    <main>Main area
+    <main>
       <section class="slideshow">
-        <div id="slideshow-posts">Post's from the blogggg</div>
+        <div id="slideshow-posts"></div>
+        <div id="excerpt" class="posts-container"></div>
       </section>
 
     </main>
-    <footer>Footer</footer>
+    <footer>
+      <section class="some-content">
+        <h3>Lenker</h3>
+        <div class="some-links">
+          <p>lenke 1</p>
+          <p>lenke 2</p>
+        </div>
+      </section>
+      <img src="/images/logo-light.png" class="logo">
+      <form action="" method="get" class="form-newsletter-footer">
+        <fieldset>
+          <legend>Subscribe to our newsletter</legend>
+          <div class="form-newsletter">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" placeholder="name" id="name" required />
+          </div>
+          <div class="form-newsletter">
+            <label for="email">Enter your e-mail:</label>
+            <input type="email" name="mail" placeholder="e-mail" id="email" required />
+          </div>
+          <div class="form-newsletter-footer">
+            <input type="submit" value="Subscribe!" />
+          </div>
+        </fieldset>
+      </form>
+    </footer>
   </div>
 </body>
 
