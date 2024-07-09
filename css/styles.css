@@ -5,12 +5,38 @@
 @import "_themeswitcher.css";
 @import "_homepage.css";
 @import "_typograpy.css";
+@import "_desktopmenu.css";
+@import "_hamburgermenu.css";
 
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
 /* :root {
 	/* --main-background-image: url("/images/paper-texture.jpg"); */
 /* --main-background-image: url("/images/jack-b-bOfCH9TnRg4-unsplash.jpg"); */
 /* --image-logo: url("/images/a-bugs-tale-light.png");
 }*/
+:root {
+	--hover-shadow-color: 0.5px 0.5px 0.5px #3d3b3b;
+	--hover-shadow-color-hamburger: 0.5px 0.5px 0.5px #f5f1f1;
+	/* ----- MOBILE MENU / HAMBURGER ----- */
+	--bar-width: 24px;
+	--bar-height: 3px;
+	--hamburger-gap: 3px;
+	--hamburger-margin: 6px;
+	--foreground: #3d3b3b;
+	--background: white;
+	--nav-link-color: white;
+	--animation-timing: 200ms ease-in-out;
+	--hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+body {
+	margin: 0;
+	background-color: aquamarine;
+}
 
 footer {
 	display: flex;
@@ -26,4 +52,13 @@ footer {
 	display: flex;
 	flex-direction: row;
 	gap: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-shadow: var(--hover-shadow-color);
 }

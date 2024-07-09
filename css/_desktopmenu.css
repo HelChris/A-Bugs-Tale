@@ -1,0 +1,14 @@
+.desktop-menu {
+	display: flex;
+	justify-content: space-around;
+}
+
+.desktop-menu a {
+	color: black;
+}
+
+@media (max-width: 28rem) {
+	.desktop-menu {
+		display: none;
+	}
+}

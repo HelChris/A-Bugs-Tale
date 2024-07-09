@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,64 @@
 </head>
 
 <body>
+  <div id="page">
+    <header>
+      <nav class="desktop-menu">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About us</a>
+        <a href="/stories.html">Stories</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="themeswitch">Theme</div>
+    <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+    <nav class="mobile-menu">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About us</a>
+      <a href="/stories.html">Stories</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="logo">
+      <img src="/images/logo-light.png" class="logo">
+      <!-- <img src="/images/a-bugs-tale-logo-dark.png"> -->
+    </div>
+    <div class="search">Searchfield</div>
+    <main>
+      <section class="slideshow">
+        <div id="slideshow-posts"></div>
+        <div id="excerpt" class="posts-container"></div>
+      </section>
 
+    </main>
+    <footer>
+      <section class="some-content">
+        <h3>Lenker</h3>
+        <div class="some-links">
+          <p>lenke 1</p>
+          <p>lenke 2</p>
+        </div>
+      </section>
+      <img src="/images/logo-light.png" class="logo">
+      <form action="" method="get" class="form-newsletter-footer">
+        <fieldset>
+          <legend>Subscribe to our newsletter</legend>
+          <div class="form-newsletter">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" placeholder="name" id="name" required />
+          </div>
+          <div class="form-newsletter">
+            <label for="email">Enter your e-mail:</label>
+            <input type="email" name="mail" placeholder="e-mail" id="email" required />
+          </div>
+          <div class="form-newsletter-footer">
+            <input type="submit" value="Subscribe!" />
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </div>
 </body>
 
 </html>

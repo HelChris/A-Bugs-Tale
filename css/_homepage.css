@@ -22,9 +22,9 @@
 	background-color: #1d43ff;
 }
 
-#page > nav {
+#page > .hamburger-menu,
+.mobile-menu {
 	grid-area: nav;
-	background-color: #ffa08c;
 }
 
 #page > .logo {
