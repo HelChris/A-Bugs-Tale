@@ -8,22 +8,26 @@ input,
 a {
 	font-family: "Cherry Swash", sans-serif;
 }
-
 label {
 	font-family: "montserrat", sans-serif;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	text-shadow: var(--hover-shadow-color);
 }
 .cherry-swash-regular {
 	font-family: "Cherry Swash", serif;
 	font-weight: 400;
 	font-style: normal;
 }
-
 .cherry-swash-bold {
 	font-family: "Cherry Swash", serif;
 	font-weight: 700;
 	font-style: normal;
 }
-
 .montserrat {
 	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;

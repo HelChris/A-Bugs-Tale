@@ -1,0 +1,40 @@
+@media (max-width: 28rem) {
+	#page {
+		display: grid;
+		gap: 1rem;
+		grid-template-areas:
+			"nav themeswitch themeswitch"
+			"search search search"
+			"logo logo logo"
+			"main main main"
+			"foot foot foot";
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 40px auto auto;
+		background: var(--main-background-image);
+	}
+	.logo {
+		max-width: 60vw;
+		/* z-index: -1; */
+		margin: auto;
+	}
+	#page > header {
+		display: none;
+	}
+	#page > .themeswitch {
+		position: absolute;
+		right: 0;
+	}
+	.themeswitch:focus-visible {
+		border: 1px solid var(--background);
+		box-shadow: 0 0 0 1px var(--foreground);
+	}
+	.header,
+	.desktop-menu {
+		display: hidden;
+	}
+}
+@media (min-width: 28rem) {
+	.hamburger-menu {
+		display: none;
+	}
+}
