@@ -7,12 +7,12 @@
 		gap: 1rem;
 		grid-template-areas:
 			"head head themeswitch"
-			"logo logo search"
+			"logo logo logo"
+			"search search search"
 			"main main main"
 			"foot foot foot";
 		grid-template-columns: repeat(3, auto);
-		grid-template-rows: repeat(4, auto);
-		/* grid-template-rows: 40px auto; */
+		grid-template-rows: 60px 1fr 60px 1fr 1fr;
 		background: var(--main-background-image);
 	}
 	#page > .hamburger-menu,
@@ -25,8 +25,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		/* background-color: #669c85; */
-		border-radius: 0 100px 100px 0;
+		background-color: var(--header-background-color);
+		border-radius: var(--border-radius-header);
 	}
 	#page > .themeswitch {
 		grid-area: themeswitch;
@@ -38,18 +38,21 @@
 	}
 	#page > .search {
 		grid-area: search;
+		background-color: var(--search-background-color);
+		border-radius: var(--border-radius-search);
 	}
 	#page > main {
 		grid-area: main;
 	}
 	#page > footer {
 		grid-area: foot;
+		background-color: var(--footer-background-color);
 	}
 }
 /* ---------------------------*/
 /* LARGE VIEWPORT MIN. 44 REM */
 /* ---------------------------*/
-@media (min-width: 44rem) {
+@media (min-width: 43rem) {
 	#page {
 		display: grid;
 		gap: 1rem;
@@ -59,7 +62,7 @@
 			"main main main main main main"
 			"foot foot foot foot foot foot";
 		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: repeat(4, 1fr, auto, 1fr, 1fr);
+		grid-template-rows: 60px repeat(3, 1fr);
 		background: var(--main-background-image);
 	}
 	#page > header {
@@ -67,8 +70,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		/* background-color: #669c85; */
-		border-radius: 0 100px 100px 0;
+		background-color: var(--header-background-color);
+		border-radius: var(--border-radius-header);
 	}
 	#page > .themeswitch {
 		grid-area: themeswitch;
@@ -91,6 +94,8 @@
 	#page > .search {
 		grid-area: search;
 		/* background-color: #7dba7f; */
+		background-color: var(--search-background-color);
+		border-radius: var(--border-radius-search);
 		max-height: 60px;
 		display: flex;
 		align-items: center;
@@ -103,7 +108,7 @@
 		grid-area: foot;
 		width: 100%;
 		/* height: max-content; */
-		/* background-color: #669c8590; */
+		background-color: var(--footer-background-color);
 	}
 	#page > .hamburger-menu,
 	.mobile-menu {

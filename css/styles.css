@@ -24,6 +24,13 @@
 	--main-background-image: url("/images/paper-texture.jpg");
 	--image-logo: url("/images/logo-light.png");
 
+	--header-background-color: #669c85;
+	--search-background-color: #7dba7f;
+	--footer-background-color: #669c8590;
+
+	--border-radius-header: 0 100px 100px 0;
+	--border-radius-search: 100px 0 0 100px;
+
 	--primary-color: #;
 	--secondary-color: #;
 	--accent-color: #;
@@ -92,14 +99,11 @@
 }
 body {
 	margin: 0;
+	background: var(--main-background-image);
 	/* background-color: #80b99350; */
 }
 
-footer {
-	display: flex;
-}
-
-.form-newsletter-footer,
+/* .form-newsletter-footer,
 .some-content {
 	max-width: 30vw;
 	margin: auto;
@@ -109,4 +113,4 @@ footer {
 	display: flex;
 	flex-direction: row;
 	gap: 1rem;
-}
+} */
