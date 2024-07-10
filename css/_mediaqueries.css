@@ -12,7 +12,7 @@
 			"main main main"
 			"foot foot foot";
 		grid-template-columns: repeat(3, auto);
-		grid-template-rows: 60px 1fr 60px 1fr 1fr;
+		grid-template-rows: 60px 200px 60px 1fr 1fr;
 		background: var(--main-background-image);
 	}
 	#page > .hamburger-menu,
@@ -62,7 +62,7 @@
 			"main main main main main main"
 			"foot foot foot foot foot foot";
 		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: 60px repeat(3, 1fr);
+		grid-template-rows: 60px 200px repeat(2, 1fr);
 		background: var(--main-background-image);
 	}
 	#page > header {
@@ -89,6 +89,7 @@
 		/* max-width: 40vw; */
 		margin: auto;
 		grid-area: logo;
+		column-span: all;
 		background: var(--image-logo);
 	}
 	#page > .search {
