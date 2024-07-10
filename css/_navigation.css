@@ -58,7 +58,7 @@
 	color: var(--background);
 	border-radius: 0 100px 100px 0;
 	width: 8rem;
-	height: 12rem;
+	height: 15rem;
 }
 .hamburger-menu:has(input:checked) {
 	--foreground: white;

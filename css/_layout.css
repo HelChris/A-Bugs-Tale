@@ -1,56 +1,51 @@
-/* GRID */
 #page {
 	display: grid;
 	gap: 1rem;
 	grid-template-areas:
-		"head head head head head themeswitch"
-		"nav logo logo logo search search"
-		"main main main main main main"
-		"foot foot foot foot foot foot";
-	grid-template-columns: repeat(6, 1fr);
+		"nav nav themeswitch"
+		"search search search"
+		"logo logo logo"
+		"main main main"
+		"foot foot foot";
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 60px 1fr 1fr 1fr 1fr;
 	background: var(--main-background-image);
 }
-#page > header {
-	grid-area: head;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	background-color: #669c85;
-	border-radius: 0 100px 100px 0;
-}
-#page > .themeswitch {
-	grid-area: themeswitch;
-	width: max-content;
+.logo {
+	margin: auto;
 }
 #page > .hamburger-menu,
 .mobile-menu {
 	grid-area: nav;
+	justify-content: center;
+	padding-left: 1em;
 }
-#page > .logo {
-	grid-area: logo;
-	margin: auto;
+#page > header {
+	display: none;
 }
-.logo {
-	/* max-width: 40vw; */
-	margin: auto;
-	grid-area: logo;
-	background: var(--image-logo);
+#page > .themeswitch {
+	grid-area: themeswitch;
+	justify-content: end;
+	width: max-content;
+	height: max-content;
 }
 #page > .search {
 	grid-area: search;
-	background-color: #7dba7f;
-	max-height: 60px;
-	display: flex;
-	align-items: center;
-	padding: 0 5px;
 }
-#page > main {
-	grid-area: main;
+.themeswitch:focus-visible {
+	border: 1px solid var(--background);
+	box-shadow: 0 0 0 1px var(--foreground);
+}
+.header,
+.desktop-menu {
+	display: hidden;
 }
 #page > footer {
 	grid-area: foot;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background-color: #669c8590;
+}
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
 }

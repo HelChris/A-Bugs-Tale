@@ -83,7 +83,7 @@
 	--bar-width: 24px;
 	--bar-height: 3px;
 	--hamburger-gap: 3px;
-	--hamburger-margin: 6px;
+	--hamburger-margin: 10px;
 	--foreground: #3d3b3b;
 	--background: white;
 	--nav-link-color: white;
@@ -92,7 +92,7 @@
 }
 body {
 	margin: 0;
-	background-color: #80b99350;
+	/* background-color: #80b99350; */
 }
 
 footer {
