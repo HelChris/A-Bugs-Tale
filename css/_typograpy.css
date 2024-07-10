@@ -18,6 +18,9 @@ a:hover {
 	text-decoration: underline;
 	text-shadow: var(--hover-shadow-color);
 }
+.active {
+	text-decoration: underline;
+}
 .cherry-swash-regular {
 	font-family: "Cherry Swash", serif;
 	font-weight: 400;

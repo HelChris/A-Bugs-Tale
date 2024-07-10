@@ -83,14 +83,7 @@
 	}
 	#page > .logo {
 		grid-area: logo;
-		margin: auto;
-	}
-	.logo {
-		/* max-width: 40vw; */
-		margin: auto;
-		grid-area: logo;
 		column-span: all;
-		background: var(--image-logo);
 	}
 	#page > .search {
 		grid-area: search;

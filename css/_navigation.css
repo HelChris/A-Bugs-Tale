@@ -3,7 +3,7 @@
 	justify-content: space-around;
 }
 .desktop-menu a {
-	color: black;
+	color: var(--desk-nav-color);
 	padding: 0 1em;
 }
 .hamburger-menu {
@@ -58,7 +58,7 @@
 	color: var(--background);
 	border-radius: 0 100px 100px 0;
 	width: 8rem;
-	height: 15rem;
+	height: 13.5rem;
 }
 .hamburger-menu:has(input:checked) {
 	--foreground: white;

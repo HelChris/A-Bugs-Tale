@@ -8,12 +8,10 @@
 		"main main main"
 		"foot foot foot";
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 60px 200px 60px 1fr 1fr;
+	grid-template-rows: 60px 150px 60px 1fr 1fr;
 }
 .logo {
-	margin: auto;
 	grid-area: logo;
-	max-width: 100vw;
 }
 #page > .hamburger-menu,
 .mobile-menu {
@@ -46,16 +44,25 @@
 	grid-area: foot;
 	background-color: var(--footer-background-color);
 	margin-bottom: 0;
-	padding-bottom: 0;
 }
 .footer-container {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-content: center;
+	padding: 1em;
 }
 
 .form-newsletter-footer,
 .some-content {
 	max-width: 300px;
+}
+.logo {
+	background-image: var(--image-logo);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+body {
+	background: var(--main-background-image);
+	margin: 0;
 }
