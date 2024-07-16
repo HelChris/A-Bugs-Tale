@@ -1,0 +1,1 @@
+// the JS that create the modal boxes to images

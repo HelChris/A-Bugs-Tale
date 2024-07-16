@@ -8,6 +8,7 @@
 @import "_typograpy.css";
 @import "_navigation.css";
 @import "_mediaqueries.css";
+@import "_blogpostcard.css";
 
 *,
 *::after,
@@ -114,4 +115,5 @@
 	--nav-link-color: white;
 	--animation-timing: 200ms ease-in-out;
 	--hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+	--border-radius-cards: 1rem 1rem 0rem 0rem;
 }
