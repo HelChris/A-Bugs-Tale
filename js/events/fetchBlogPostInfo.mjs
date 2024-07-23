@@ -6,6 +6,8 @@ export async function fetchBlogPostInfo(url) {
 
 		const blogInfo = data.map((post) => ({
 			id: post.id,
+			date: post.date,
+			modified: post.modified,
 			featuredImage:
 				post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
 				"defaultImageUrl", // get the image URL

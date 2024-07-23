@@ -1,4 +1,4 @@
-export function createBlogPostCard(post) {
+export function displayBlogPostCard(post) {
 	const div = document.createElement("div");
 	div.className = "post-card-wrapper";
 
