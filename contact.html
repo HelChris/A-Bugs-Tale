@@ -68,10 +68,38 @@
     </div>
     <div class="search">Searchfield</div>
     <main>
-      <section class="slideshow">
-        <div id="slideshow-posts"></div>
-        <div id="excerpt" class="posts-container"></div>
-      </section>
+      <!-- REMEMBER TO USE JAVASCRIPT FOR VALIDATION AND SHOW ERROR MESSAGES IF VALUES IN THE TEXTBOXES DO NOT MEET THE REQUIREMENTS-->
+      <div class="container">
+        <h1>Contact us</h1>
+        <form action="" method="get" class="contact-form">
+          <div class="form">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" class="form-input" required minlength="5"
+              maxlength="20" required />
+          </div>
+          <div class="form">
+            <label for="email">Enter your email:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com" class="form-input" required />
+          </div>
+          <div class="form">
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject" placeholder="the subject" class="form-input" required
+              minlength="15" required />
+          </div>
+          <div class="form form-message-input">
+            <label for="message">Message:</label>
+            <input class="form-message-input" type="text" name="message" id="message"
+              placeholder="write your message here.." required minlength="25" required />
+          </div>
+          <div class="form">
+            <input class="contact-checkbox" type="checkbox" id="checkbox" />
+            <label for="checkbox">Yes, I would like to subscribe to the newsletter!</label>
+          </div>
+          <div class="form">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
 
     </main>
     <footer>

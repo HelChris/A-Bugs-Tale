@@ -16,10 +16,10 @@ export async function displaySinglePost() {
 		return;
 	}
 
-  try {
-    const post = await fetchPostById(id);
-    showCorrectPageName(document.querySelector("#single-story-page"), post);
-    
+	try {
+		const post = await fetchPostById(id);
+		showCorrectPageName(document.querySelector("#single-story-page"), post);
+
 		const resultsContainer = document.querySelector("#single-story-page");
 		resultsContainer.innerHTML = "";
 
